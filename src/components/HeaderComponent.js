@@ -1,7 +1,6 @@
 import React, { Component }from 'react';
 import { Nav, Navbar, NavbarToggler, Collapse, NavItem, Jumbotron } from 'reactstrap';
 import { NavLink } from 'react-router-dom';
-import { TREATMENTS } from '../shared/treatments';
 
 class Header extends Component {
 
@@ -27,17 +26,16 @@ class Header extends Component {
                     <div className="container">
                         <div className="row">
                             <div className="col-4 col-sm-3 col-md-2 align-self-center">
-                                <img src="/assets/images/sara1.jpg" height="150" width="150" alt="SJC Logo"/>
+                                <img src="/assets/images/sara1.jpg" height="200" width="150" alt="SJC Logo"/>
                             </div>
                             <div className="col">
                                 <h1>Sara Joyce Counseling</h1>
-                                <p>Sara J. Ratliff, MA, LPC, NCC
-                                    sararatliffcounseling@gmail.com 
-                                    (913) 704-9915
-                                </p>
+                                Sara J. Ratliff, MA, LPC, NCC<br/>
+                                sararatliffcounseling@gmail.com<br/>
+                                (913) 704-9915
                             </div>
                             <div className="col-md-2 col-lg-4 mt-4">
-                                <a role="button" className="btn btn-lg btn-warning" href="#">Book Your Appointment</a>
+                                <a role="button" className="btn btn-lg btn-warning" href="/contactus">Book Your Appointment</a>
                             </div>
                         </div>
                     </div>

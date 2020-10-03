@@ -24,6 +24,7 @@ class Contact extends Component {
 
         this.handleInputChange = this.handleInputChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
+        this.handleChange=this.handleChange.bind(this);
     }
     validate(firstName, lastName, phoneNum, email) {
 
@@ -76,10 +77,12 @@ class Contact extends Component {
             [name]: value
         });
     }
+    handleChange(event) {
+        this.setState({value: event.target.value});
+      }
 
     handleSubmit(event) {
-        console.log('Current state is: ' + JSON.stringify(this.state));
-        alert('Current state is: ' + JSON.stringify(this.state));
+        alert('Thank you for submitting the form!!')
         event.preventDefault();
     }
     render(){
@@ -96,11 +99,7 @@ class Contact extends Component {
                         <hr />
                     </div>
                 </div>
-                <div className="row row-content items-align-center">
-                    <div className="col-sm-12">
-                        <img className="imgs" src="/assets/images/office2.jpg" alt="..."/>
-                    </div>
-                </div>
+            
                 <div className="row">          
                     <div className="col">
                         <p>
@@ -188,7 +187,7 @@ class Contact extends Component {
                                     <Col md={10}>
                                         <Input type="select" name="serviceType"
                                                 value={this.state.serviceType}
-                                                onChange={this.handleInputChange}>
+                                                onChange={this.handleChange}>
                                             <option selected>Select...</option>
                                             <option value="freePhone">Free Phone Consulation</option>
                                             <option value="appointment">Set up an appointment</option>
@@ -207,11 +206,14 @@ class Contact extends Component {
                                     </Col>
                                 </FormGroup>
                                 <FormGroup row>
-                                    <Col md={{size: 10, offset: 2}}>
+                                    <Col md={{size: 10, offset: 6}}>
                                         <Button type="submit" className="btn btn-lg btn-warning text-white">
                                             Submit
                                         </Button>
-                                        <span className ="text-muted warntxt">
+                                        
+                                    </Col>
+                                    <Col md={{size: 10, offset: 3}}>
+                                    <span className ="text-muted warntxt">
                                             (By clicking submit you agree that the phone number and/or email you provided may be used to 
                                             contact you)
                                         </span>

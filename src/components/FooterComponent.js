@@ -8,11 +8,11 @@ function Footer(props) {
                     <div className="col-4 col-sm-2 offset-1">
                     <h5>Links</h5>
                     <ul className= "list-unstyled">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">My Approach</a></li>
-                        <li><a href="#">Treatments</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="/home">Home</a></li>
+                        <li><a href="/aboutus">About</a></li>
+                        <li><a href="/approach">My Approach</a></li>
+                        <li><a href="treatments">Treatments</a></li>
+                        <li><a href="contactus">Contact Us</a></li>
                     </ul>
                     </div>
                     <div className ="col-sm-4 text-center">
@@ -26,10 +26,10 @@ function Footer(props) {
                     <a role="button" className="btn btn-link" href="tel:+19137049915"><i className="fa fa-phone"></i> (913) 704-9915</a><br />
                     <a role="button" className="btn btn-link" href="mailto:sararatliffcounseling@gmail.com"><i className="fa fa-envelope-o"></i> sararatliffcounseling@gmail.com</a>
                     <ul className= "list-unstyled">
-                        <li><a> Office Hours:</a></li>
-                        <li><a> Mon, Wed and Fri: 8am-6pm</a></li>
-                        <li><a> Tue and Thu: 8am-4pm</a></li>
-                        <li><a> Sat: By Appointment</a></li>
+                        <li> Office Hours:</li>
+                        <li> Mon, Wed and Fri: 8am-6pm</li>
+                        <li> Tue and Thu: 8am-4pm</li>
+                        <li> Sat: By Appointment</li>
                     </ul>
                 </div>
                 </div>
